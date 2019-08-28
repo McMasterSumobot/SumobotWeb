@@ -27,6 +27,12 @@
 
 
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+          <li class="nav-item">
+              <a class="nav-link no-caret" role="button">
+                  <i class="ni ni-ui-04 d-lg-none"></i>
+                  <span  [routerLink]="['/about']" class="nav-link-inner--text">About Us</span>
+                </a>
+            </li>
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
@@ -35,7 +41,7 @@
           <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
 
-              <a routerLinkActive="active" [routerLink]="['documentation/colors']" class="media d-flex align-items-center">
+              <a routerLinkActive="active" [routerLink]="['/beginner-competition']" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
                   <i class="ni ni-palette"></i>
                 </div>
@@ -56,6 +62,12 @@
             </div>
           </div>
         </li>
+        <li class="nav-item">
+            <a class="nav-link no-caret" role="button">
+                <i class="ni ni-ui-04 d-lg-none"></i>
+                <span routerLinkActive="active" [routerLink]="['/tutorials']" class="nav-link-inner--text">Tutorials</span>
+              </a>
+          </li>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
@@ -77,7 +89,7 @@
           </a>
         </li>
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a [routerLink]="['/register']" target="_blank" class="btn btn-neutral btn-icon">
+          <a [routerLink]="['/register']" class="btn btn-neutral btn-icon">
             <span class="btn-inner--icon">
               <i class="fa fa-cloud-download mr-2"></i>
             </span>

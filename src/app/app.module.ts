@@ -13,6 +13,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
+import { TutorialsComponent } from './tutorials/tutorials.component';
+import { AdvancedComponent } from './advanced/advanced.component';
+import { BeginnerComponent } from './beginner/beginner.component';
+import { CompetitionComponent } from './competition/competition.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { HomeModule } from './home/home.module';
     SignupComponent,
     LandingComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TutorialsComponent,
+    AdvancedComponent,
+    BeginnerComponent,
+    CompetitionComponent
   ],
   imports: [
     BrowserModule,

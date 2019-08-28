@@ -2333,7 +2333,7 @@ textarea.form-control {
 .btn.focus,
 .btn:focus {
     outline: 0;
-    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
+    box-shadow: 0 7px 14px rgba(93, 50, 50, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)
 }
 
 .btn.disabled,
