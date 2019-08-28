@@ -1,0 +1,140 @@
+<main>
+  <div class="position-relative">
+    <section class="section section-lg section-shaped pb-250">
+      <div class="shape shape-style-1 shape-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container py-lg-md d-flex">
+        <div class="col px-0">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="display-3  text-white">McMaster Sumobot
+                <span>So you want to build a robot?</span>
+              </h1>
+              <p class="lead  text-white">The McMaster Sumobot Competition is a robotics organization that challenges students to design their own autonomous fighting robots, which are pitted against each other in tournament-style, one-on-one wrestling matches. </p>
+              <div class="btn-wrapper">
+                <a href="" class="btn btn-white btn-icon mb-3 mb-sm-0">
+                  <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
+                  <span class="btn-inner--text">Learn More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG separator -->
+      <div class="separator separator-bottom separator-skew">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </section>
+    <!-- 1st Hero Variation -->
+  </div>
+  <section class="section section-lg pt-lg-0 mt--200">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="row row-grid">
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                    <i class="ni ni-check-bold"></i>
+                  </div>
+                  <h6 class="text-primary text-uppercase">tutorials</h6>
+                  <p class="description mt-3">We provide handson tutorials for members who don't have any related experience in robotics or engineering.</p>
+                  <div>
+                    <span class="badge badge-pill badge-primary">education</span>
+                    <span class="badge badge-pill badge-primary">hands on</span>
+                    <span class="badge badge-pill badge-primary">creative</span>
+                  </div>
+                  <a [routerLink]="['/tutorials']" class="btn btn-primary mt-4">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                    <i class="ni ni-istanbul"></i>
+                  </div>
+                  <h6 class="text-success text-uppercase">beginner competition</h6>
+                  <p class="description mt-3">Nice for entry level robotics enthusiasist</p>
+                  <div>
+                    <span class="badge badge-pill badge-success">entry-level</span>
+                    <span class="badge badge-pill badge-success">teamwork</span>
+                    <span class="badge badge-pill badge-success">success</span>
+                  </div>
+                  <a [routerLink]="['/beginner-competition']" class="btn btn-success mt-4">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                    <i class="ni ni-robot"></i>
+                  </div>
+                  <h6 class="text-warning text-uppercase">advanced competition</h6>
+                  <p class="description mt-3">Ready for the challenges?</p>
+                  <div>
+                    <span class="badge badge-pill badge-warning">competitive</span>
+                    <span class="badge badge-pill badge-warning">intermediate</span>
+                  </div>
+                  <a [routerLink]="['/register']" class="btn btn-warning mt-4">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-lg pt-lg-0 section-contact-us">
+    <div class="container">
+      <div class="row justify-content-center mt--300">
+        <div class="col-lg-8">
+          <div class="card bg-gradient-secondary shadow">
+            <div class="card-body p-lg-5">
+              <h4 class="mb-1">Contact Us</h4>
+              <p class="mt-0">Your feedback is very important to us.</p>
+              <div class="form-group mt-5" [ngClass]="{'focused':focus===true}">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-user-run"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Your name" type="text" (focus)="focus=true" (blur)="focus=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Email address" type="email" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+              </div>
+              <div>
+                <button type="button" class="btn btn-default btn-round btn-block btn-lg">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
