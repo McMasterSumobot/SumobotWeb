@@ -18,13 +18,13 @@
               <div class="text-center text-muted mb-4">
                 <small>Sign up with McMaster Email</small>
               </div>
-              <form role="form">
+              <form role="form" #form action="https://docs.google.com/forms/d/e/1FAIpQLScB4W3FMic6E3xpWqcg76eyye7d_qcgIYZjQ_fbe4U04QeMAw/formResponse" method='post'>
                 <div class="form-group" [ngClass]="{'focused':focus===true}">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Name" type="text" (focus)="focus=true" (blur)="focus=false">
+                    <input class="form-control" name="entry.1906497807" placeholder="Name" type="text" >
                   </div>
                 </div>
                 <div class="form-group" [ngClass]="{'focused':focus1===true}">
@@ -32,7 +32,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Email" type="email" (focus)="focus1=true" (blur)="focus1=false">
+                    <input class="form-control" name="entry.566585327" placeholder="Email" type="email" (focus)="focus1=true" (blur)="focus1=false">
                   </div>
                 </div>
                 <div class="row my-4">
@@ -48,7 +48,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary mt-4">Join the club</button>
+                  <button type="submit" class="btn btn-primary mt-4" value="send" (click)="form.submit()">Join the club</button>
                 </div>
               </form>
             </div>
