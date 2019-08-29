@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const e: any;
 
 @Component({
     selector: 'app-landing',

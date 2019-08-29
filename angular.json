@@ -26,7 +26,9 @@
               "src/styles.css",
               "src/assets/scss/argon.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.instashow-lite.packaged.js"
+            ]
           },
           "configurations": {
             "production": {
