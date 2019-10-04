@@ -2,7 +2,7 @@
   <div class="position-relative">
     <section class="section section-lg section-shaped pb-250">
       <div class="shape shape-style-1 shape-dark">
-          <img src="./assets/img/theme/IMG_1334.jpg" width="100%">
+        <img src="./assets/img/theme/IMG_1334.jpg" width="100%">
 
         <span></span>
         <span></span>
@@ -151,11 +151,35 @@
     </div>
   </section>
 
-  <section class="section section-lg pt-lg-0 mt--200">
+
+  <section class="section bg-secondary">
     <div class="container">
-      <div class="row justify-content-center">
-        <div data-is data-is-access-token="9410218449.6142d53.9254423118334db5a13b23250c44d3ab"
-          data-is-cache-media-time="2500" data-is-rows="2"></div>
+      <div class="row row-grid align-items-center">
+
+        <div class="col-md-6">
+          <div class="pl-md-5">
+            <h4 class="mb-1">Contact Us</h4>
+            at <a href="mailto:cr_sbot@mcmaster.ca" class="mt-0">cr_sbot@mcmaster.ca</a>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-default shadow border-0">
+            <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
+              (mapClick)="mapClicked($event)">
+
+              <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)"
+                [latitude]="m.lat" [longitude]="m.lng" [label]="m.label" [markerDraggable]="m.draggable"
+                (dragEnd)="markerDragEnd(m, $event)">
+
+                <agm-info-window>
+                  <strong>InfoWindow content</strong>
+                </agm-info-window>
+              </agm-marker>
+
+            </agm-map>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -198,7 +222,7 @@
       <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
     </svg>
   </div>
-  <section class="section section-lg pt-lg-0 section-contact-us">
+  <!-- <section class="section section-lg pt-lg-0 section-contact-us">
     <div class="container">
       <div class="row justify-content-center mt--300">
         <div class="col-lg-8">
@@ -236,5 +260,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </main>

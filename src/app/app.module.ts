@@ -17,7 +17,7 @@ import { TutorialsComponent } from './tutorials/tutorials.component';
 import { AdvancedComponent } from './advanced/advanced.component';
 import { BeginnerComponent } from './beginner/beginner.component';
 import { CompetitionComponent } from './competition/competition.component';
-
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +32,16 @@ import { CompetitionComponent } from './competition/competition.component';
   ],
   imports: [
     BrowserModule,
+    // tslint:disable-next-line: deprecation
     NgbModule.forRoot(),
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    AgmCoreModule.forRoot({
+
+      apiKey: 'AIzaSyDtAOLte63fvHQd8HqVFEfi0eLek_MvuNg'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
