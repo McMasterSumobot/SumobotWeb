@@ -152,7 +152,7 @@
   </section>
 
 
-  <section class="section bg-secondary">
+  <section class="section ">
     <div class="container">
       <div class="row row-grid align-items-center">
 
@@ -160,6 +160,14 @@
           <div class="pl-md-5">
             <h4 class="mb-1">Contact Us</h4>
             at <a href="mailto:cr_sbot@mcmaster.ca" class="mt-0">cr_sbot@mcmaster.ca</a>
+            <p></p>
+            <p></p>
+            <h5 class="mb-1">McMaster University</h5>
+            <a>1280 Main St W </a>
+            <br>
+            <a>Hamilton, ON </a>
+            <a>L8S 4L8</a>
+            <br>
           </div>
 
         </div>
@@ -168,53 +176,27 @@
             <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
               (mapClick)="mapClicked($event)">
 
-              <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)"
-                [latitude]="m.lat" [longitude]="m.lng" [label]="m.label" [markerDraggable]="m.draggable"
-                (dragEnd)="markerDragEnd(m, $event)">
+              <agm-marker *ngFor="let m of markers; let i = index" [latitude]="m.lat" [longitude]="m.lng"
+                [label]="m.label" [markerDraggable]="m.draggable" (dragEnd)="markerDragEnd(m, $event)">
 
                 <agm-info-window>
-                  <strong>InfoWindow content</strong>
+                  <strong>McMaster Sumobot Club</strong>
                 </agm-info-window>
               </agm-marker>
-
             </agm-map>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <div class="separator separator-bottom separator-skew">
     <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
     </svg>
   </div>
   <!-- SVG separator -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+ 
 
 
   <div class="separator separator-bottom separator-skew">

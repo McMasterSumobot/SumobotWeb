@@ -23,24 +23,16 @@ export class LandingComponent implements OnInit {
   lng: number = -79.9230954;
   markers: Marker[] = [
     {
-      lat: 43.258828,
-      lng: -79.9230954,
+      lat: 43.258871,
+      lng: -79.921116,
       label: '',
       draggable: false
     }
   ];
 
   ngOnInit() { }
-  clickedMarker(label: string, index: number) {
-    console.log(`clicked the marker: ${label || index}`);
-  }
-  mapClicked($event: MouseEvent) {
-    this.markers.push({
-      lat: $event.coords.lat,
-      lng: $event.coords.lng,
-      draggable: true
-    });
-  }
+
+
   markerDragEnd(m: Marker, $event: MouseEvent) {
     console.log('dragEnd', m, $event);
   }
