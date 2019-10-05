@@ -153,8 +153,7 @@
     }
 
     .shape-dark {
-        background: linear-gradient(150deg, shapes-dark-color("step-1-gradient-bg") 15%, shapes-dark-color("step-2-gradient-bg") 70%, shapes-dark-color("step-3-gradient-bg") 94%);
-
+        background-image: url("/assets/img/theme/IMG_1334.jpg");
          :nth-child(1) {
             background: shapes-dark-color("span-1-bg");
         }
@@ -300,7 +299,9 @@
         }
 
         &.shape-dark {
-            background: linear-gradient(150deg, shapes-dark-color("step-1-gradient-bg") 15%, shapes-dark-color("step-2-gradient-bg") 70%, shapes-dark-color("step-3-gradient-bg") 94%);
+            background-image: url("/assets/img/theme/IMG_1334.jpg");
+            background-size: 100%;
+            width: 100%;
         }
     }
 
